@@ -1,0 +1,60 @@
+{
+  "name": "backend-for-frontend",
+  "version": "5.2.0",
+  "description": "Backend for Frontend",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "author": "Rajat Sharma",
+  "scripts": {
+    "postinstall": "npm rebuild node-sass",
+    "start": "node app.js",
+    "test": "nyc mocha --timeout=10000 --exit",
+    "lint": "eslint \"**/*.js\""
+  },
+  "dependencies": {
+    "@octokit/rest": "^16.35.0",
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "express-status-monitor": "^1.2.7",
+    "lodash": "^4.17.15",
+    "lusca": "^1.6.1",
+    "minio": "^7.0.12",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.0",
+    "uuid": "^3.3.3",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.7.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "sinon": "^7.5.0",
+    "sinon-mongoose": "^2.3.0",
+    "supertest": "^5.0.0-0"
+  },
+  "engines": {
+    "node": ">=8.16.1",
+    "npm": ">=6.4.1"
+  }
+}
